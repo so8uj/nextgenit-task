@@ -2,7 +2,8 @@
 
     require_once('header.php'); 
     require_once('core/db.php');
-    $all_blogs_query = mysqli_query($db_connet,"SELECT * FROM `blogs` ORDER BY `id` DESC");
+    $user_id = $admin_data['id'];
+    $all_blogs_query = mysqli_query($db_connet,"SELECT * FROM `blogs` WHERE `user_id` = '$user_id' ORDER BY `id` DESC");
     
     function slug($str) { 
     
