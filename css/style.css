@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.blog-container{
+    cursor: pointer;
+    transition: .3s ease;
+}
+.blog-container:hover{
+    transform: translateY(-10px);
+}
+
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-size: 60% 60% !important;
+    background-color: rgb(23, 181, 255);
+    padding: 20px;
+    border-radius: 100px;
+}
